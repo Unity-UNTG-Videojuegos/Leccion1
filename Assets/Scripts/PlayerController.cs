@@ -9,6 +9,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+//Declaración de variables
     public float velocidad = 20;
     public float turnSpeed;
     public float horizontalInput;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    //mover el carro de manera vertical u horizontal
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
         //We'll move the vehicle forward
